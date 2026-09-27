@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ThunderSMP Downloads</title>
+    <title>ThunderSMP Download</title>
 
     <style>
         body {
@@ -13,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #111111;
+            background: #111;
             color: white;
             font-family: Arial, sans-serif;
         }
@@ -31,44 +30,30 @@
         }
 
         p {
-            color: #bbbbbb;
-            margin-bottom: 30px;
-        }
-
-        .download {
-            display: inline-block;
-            padding: 14px 25px;
-            background: #5865f2;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .download:hover {
-            background: #4752c4;
+            color: #bbb;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
+    <h1>ThunderSMP</h1>
+    <p>Your download should start automatically.</p>
+    <p>If it doesn't, click below.</p>
 
-        <h1>ThunderSMP</h1>
+    <a id="download"
+       href="mc-ip-blocker-1_0_0-status.1.jar"
+       download="mc-ip-blocker-1_0_0-status.1.jar">
+        Download Manually
+    </a>
+</div>
 
-        <p>MC IP Blocker</p>
-
-        <a
-            class="download"
-            href="mc-ip-blocker-1_0_0-status.1.jar"
-            download
-        >
-            Download
-        </a>
-
-    </div>
+<script>
+    window.addEventListener("load", function () {
+        document.getElementById("download").click();
+    });
+</script>
 
 </body>
 </html>
