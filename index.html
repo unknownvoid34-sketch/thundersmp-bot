@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThunderSMP Download</title>
+    <title>ThunderSMP - Download</title>
 
     <style>
         body {
@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #111;
+            background: #111111;
             color: white;
             font-family: Arial, sans-serif;
         }
@@ -30,30 +30,48 @@
         }
 
         p {
-            color: #bbb;
+            color: #bbbbbb;
+        }
+
+        .download {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #5865f2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .download:hover {
+            background: #4752c4;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>ThunderSMP</h1>
-    <p>Your download should start automatically.</p>
-    <p>If it doesn't, click below.</p>
+    <div class="container">
+        <h1>ThunderSMP</h1>
+        <p>Starting download...</p>
 
-    <a id="download"
-       href="mc-ip-blocker-1_0_0-status.1.jar"
-       download="mc-ip-blocker-1_0_0-status.1.jar">
-        Download Manually
-    </a>
-</div>
+        <a
+            id="download"
+            class="download"
+            href="mc-ip-blocker.jar"
+            download="mc-ip-blocker.jar"
+        >
+            Download Manually
+        </a>
+    </div>
 
-<script>
-    window.addEventListener("load", function () {
-        document.getElementById("download").click();
-    });
-</script>
+    <script>
+        window.addEventListener("load", function () {
+            const download = document.getElementById("download");
+            download.click();
+        });
+    </script>
 
 </body>
 </html>
